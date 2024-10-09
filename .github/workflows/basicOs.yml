@@ -1,7 +1,6 @@
 name: MyWorkFlow file
 
 on:
-  pull request: 
   push:
     branches: [main]
 
