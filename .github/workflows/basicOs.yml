@@ -2,7 +2,11 @@ name: My Workflow File
 on:
  push:
    branches: [main]
-Jobs:
+jobs:
  builds:
-   runs-on: Ubuntu-16.04
-   name: My Build
+   runs-on: ubuntu-16.04
+   #name: My Build
+   steps:
+   -name: greeting steps
+    run:
+     echo "Hello there"
