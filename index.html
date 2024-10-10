@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,85 +17,6 @@
     <p>This is a simple static webpage deployed to GitHub Pages.</p>
 </body>
 </html>
- -->
 
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to the WWE Arena</title>
-    <style>
-        body {
-            font-family: 'Impact', sans-serif;
-            background-color: black;
-            color: white;
-            text-align: center;
-            margin-top: 50px;
-            background-image: url('https://wallpaperaccess.com/full/126758.jpg'); /* Wrestling ring background */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        h1 {
-            font-size: 3em;
-            color: #FFD700; /* Gold color for the title */
-            text-shadow: 2px 2px 5px red;
-        }
-        p {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: white;
-            text-shadow: 1px 1px 3px red;
-        }
-        .entrance-music {
-            margin-top: 30px;
-        }
-        button {
-            background-color: #FF0000;
-            color: white;
-            font-size: 1.2em;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            text-transform: uppercase;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #B22222;
-        }
-        .superstar {
-            margin-top: 30px;
-        }
-        .superstar img {
-            width: 300px;
-            border-radius: 15px;
-            box-shadow: 0px 0px 15px #FFD700;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to the WWE Arena!</h1>
-    <p>Prepare for the ultimate showdown! Step into the ring and feel the heat!</p>
-    
-    <!-- Wrestler image -->
-    <div class="superstar">
-        <img src="https://www.wwe.com/f/styles/gallery_img_l/public/all/2019/06/John_Cena_bio--278fa5df1db05a15d569baf7f4d9f068.jpg" alt="John Cena">
-    </div>
 
-    <!-- Entrance Music Button -->
-    <div class="entrance-music">
-        <p>Hit the entrance music!</p>
-        <button onclick="playMusic()">Play</button>
-    </div>
-    
-    <audio id="themeMusic" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
 
-    <script>
-        function playMusic() {
-            var music = document.getElementById('themeMusic');
-            music.play();
-        }
-    </script>
-</body>
-</html>
