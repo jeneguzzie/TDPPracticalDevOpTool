@@ -1,0 +1,22 @@
+name: My Workflow file
+
+on:
+  push:
+    branches:
+      -main
+
+jobs:
+  my-job:
+    name: My Job
+    runs-on: ubuntu-latest
+
+    steps:
+
+      #Step 1: Check out the source code from the repository
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      #Step 2:Print a greeting message
+      -name: Print a greeting
+      run: |
+        echo "Hello there"
