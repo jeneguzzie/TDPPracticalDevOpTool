@@ -17,6 +17,18 @@ jobs:
         uses: actions/checkout@v3
 
       #Step 2:Print a greeting message
-      -name: Print a greeting
-      run: |
-        echo "Hello there"
+      - name: Print a greeting
+        run: |
+          echo "Hello there"
+
+      #Step 3: Set up Python (you can specify the version)
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x' #Set Python version (e.g., '3.9')
+
+      #Step 4: Install dependancies (if you have a requirements.txt file)
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
